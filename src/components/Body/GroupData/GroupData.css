@@ -1,0 +1,83 @@
+.group-container {
+  display: flex;
+  gap: 16px;
+  min-width: max-content;
+}
+
+.column {
+  flex: 0 0 272px; 
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.column-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column-header-right {
+  display: flex;
+  gap: 8px;
+}
+
+.status-icon, .action-icon {
+  width: 16px;
+  height: 16px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+}
+
+.item-count {
+  color: gray;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f4f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #626262;
+  position: relative;
+}
+
+.availability-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.availability-indicator.available {
+  background-color: #4caf50;
+}
+
+.availability-indicator.unavailable {
+  background-color: #bdbdbd;
+}

@@ -1,0 +1,115 @@
+/* Card.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-id {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+.user-avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f4f5f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #626262;
+    position: relative;
+}
+
+.initials {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.availability-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.availability-indicator.available {
+    background-color: #4caf50;
+}
+
+.availability-indicator.unavailable {
+    background-color: #bdbdbd;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.priority-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.card-tag-text {
+    font-size: 12px;
+    color: #6b6b6b;
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 8px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-tag-text {
+        font-size: 10px;
+    }
+}
